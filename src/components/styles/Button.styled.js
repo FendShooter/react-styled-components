@@ -17,5 +17,8 @@ const Button = styled.button`
     transform: scale(0.98);
   }
 `;
+export const FancyButton = styled(Button)`
+  background-image: linear-gradient(to right, green, pink);
+`;
 
 export default Button;

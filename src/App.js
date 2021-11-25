@@ -5,6 +5,7 @@ import GlobalStyles from './components/styles/Global';
 import content from './contents';
 import Card from './components/Card';
 import Footer from './components/Footer';
+import { FancyButton } from './components/styles/Button.styled';
 
 const theme = {
   colors: {
@@ -19,6 +20,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header />
+
       <Container>
         {content &&
           content.map((item, index) => <Card key={index} {...item}></Card>)}
